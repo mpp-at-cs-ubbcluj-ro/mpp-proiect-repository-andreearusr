@@ -1,4 +1,5 @@
 ﻿using System;
+using MPP_MusicFestival.Testing;
 
 namespace MPP_MusicFestival
 {
@@ -6,6 +7,8 @@ namespace MPP_MusicFestival
     {
         static void Main(string[] args)
         {
+            Test t = new Test();
+            t.test();
             Console.WriteLine("Hello World!");
         }
     }
