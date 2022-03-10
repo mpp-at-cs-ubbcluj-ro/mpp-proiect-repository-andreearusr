@@ -43,8 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Artist.cs" />
+    <Compile Include="Domain\Entity.cs" />
+    <Compile Include="Domain\OfficeEmployee.cs" />
+    <Compile Include="Domain\Show.cs" />
+    <Compile Include="Domain\Ticket.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ArtistRepository.cs" />
+    <Compile Include="Repository\OfficeEmployeeRepository.cs" />
+    <Compile Include="Repository\Repository.cs" />
+    <Compile Include="Repository\ShowRepository.cs" />
+    <Compile Include="Repository\TicketRepository.cs" />
+    <Compile Include="Test\Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

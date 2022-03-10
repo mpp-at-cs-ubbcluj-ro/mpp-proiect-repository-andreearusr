@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MPP_MusicFestival.Testing;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,9 @@ namespace MusicFestival
     {
         static void Main(string[] args)
         {
+            Test t = new Test();
+            t.test();
+            Console.WriteLine("Hello World!");
         }
     }
 }
