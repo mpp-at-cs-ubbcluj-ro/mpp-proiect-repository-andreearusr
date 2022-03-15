@@ -7,6 +7,6 @@ namespace MPP_MusicFestival.Repository
 {
     interface ShowRepository: Repository<long, Show>
     {
-        IEnumerable<Artist> findArtistsByDate(string date);
+        IEnumerable<Show> getArtistsByDate(DateTime date);
     }
 }

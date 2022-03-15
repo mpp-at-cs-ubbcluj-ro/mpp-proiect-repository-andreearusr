@@ -10,5 +10,7 @@ namespace MPP_MusicFestival.Repository
         long getId(string username);
 
         string getPassword(long id);
+
+        long getId(long CNP);
     }
 }

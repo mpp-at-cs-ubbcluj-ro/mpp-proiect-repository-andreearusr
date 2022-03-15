@@ -9,8 +9,8 @@ namespace MPP_MusicFestival.Repository
     {
         E findOne(ID id);
         IEnumerable<E> findAll();
-        E save(E entity);
-        E delete(ID id);
-        E update(ID id, E entity);
+        void save(E entity);
+        void delete(ID id);
+        void update(ID id, E entity);
     }
 }

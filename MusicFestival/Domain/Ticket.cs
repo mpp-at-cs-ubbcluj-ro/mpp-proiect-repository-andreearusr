@@ -18,6 +18,13 @@ namespace MPP_MusicFestival.Domain
             this.buyerName = buyerName;
         }
 
+        public Ticket(long showId, long employeeId, string buyerName) : base(0)
+        {
+            this.showId = showId;
+            this.employeeId = employeeId;
+            this.buyerName = buyerName;
+        }
+
         public override string ToString()
         {
             return "Bilet- Cod:" + base.ToString() + " Nume cumparator:" + buyerName +

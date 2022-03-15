@@ -23,6 +23,15 @@ namespace MPP_MusicFestival.Domain
             this.password = password;
         }
 
+        public OfficeEmployee(string firstName, string lastName, long CNP, string username, string password) : base(0)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.CNP = CNP;
+            this.username = username;
+            this.password = password;
+        }
+
         public override string ToString()
         {
             return "Cod angajat:" + base.ToString() + " Nume:" + lastName + 

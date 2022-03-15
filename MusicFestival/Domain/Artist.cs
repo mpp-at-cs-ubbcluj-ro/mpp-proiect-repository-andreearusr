@@ -18,6 +18,13 @@ namespace MPP_MusicFestival.Domain
             this.age = age;
             this.originCountry = originCountry;
         }
+        public Artist(string firstName, string lastName, int age, string originCountry) : base(0)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+            this.originCountry = originCountry;
+        }
 
         public override string ToString()
         {

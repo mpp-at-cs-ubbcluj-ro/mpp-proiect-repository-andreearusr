@@ -25,6 +25,16 @@ namespace MPP_MusicFestival.Domain
             this.seatsAvailable = seatsAvailable;
             this.seatsSold = seatsSold;
         }
+        public Show(string showName, string description, Artist artist, DateTime dateTime, string showLocation, int seatsAvailable, int seatsSold) : base(0)
+        {
+            this.showName = showName;
+            this.description = description;
+            this.artist = artist;
+            this.dateTime = dateTime;
+            this.showLocation = showLocation;
+            this.seatsAvailable = seatsAvailable;
+            this.seatsSold = seatsSold;
+        }
 
         public override string ToString()
         {
