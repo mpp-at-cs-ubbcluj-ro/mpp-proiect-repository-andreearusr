@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestDomain" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-03-08T07:32:01" hostname="ANDREEA" time="0.082">
+<testsuite name="TestDomain" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-03-12T09:30:08" hostname="ANDREEA" time="0.039">
   <properties/>
-  <testcase name="Test Show" classname="TestDomain" time="0.054"/>
-  <testcase name="Test Office Employee" classname="TestDomain" time="0.008"/>
-  <testcase name="Test Artist" classname="TestDomain" time="0.011"/>
-  <testcase name="Test Entity" classname="TestDomain" time="0.002"/>
-  <testcase name="Test Ticket" classname="TestDomain" time="0.002"/>
+  <testcase name="Test Show" classname="TestDomain" time="0.025"/>
+  <testcase name="Test Office Employee" classname="TestDomain" time="0.004"/>
+  <testcase name="Test Artist" classname="TestDomain" time="0.005"/>
+  <testcase name="Test Entity" classname="TestDomain" time="0.001"/>
+  <testcase name="Test Ticket" classname="TestDomain" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

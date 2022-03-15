@@ -18,6 +18,15 @@ public class OfficeEmployee extends Entity<Long> {
         this.password = password;
     }
 
+    public OfficeEmployee(String firstName, String lastName, Long CNP, String username, String password) {
+        super(0L);
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.CNP = CNP;
+        this.username = username;
+        this.password = password;
+    }
+
     public String getFirstName() {
         return firstName;
     }

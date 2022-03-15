@@ -23,6 +23,17 @@ public class Show extends Entity<Long>{
         this.seatsSold = seatsSold;
     }
 
+    public Show(String showName, String description, Artist artist, Timestamp dateTime, String showLocation, int seatsAvailable, int seatsSold) {
+        super(0L);
+        this.showName = showName;
+        this.description = description;
+        this.artist = artist;
+        this.dateTime = dateTime;
+        this.showLocation = showLocation;
+        this.seatsAvailable = seatsAvailable;
+        this.seatsSold = seatsSold;
+    }
+
     public String getShowName() {
         return showName;
     }

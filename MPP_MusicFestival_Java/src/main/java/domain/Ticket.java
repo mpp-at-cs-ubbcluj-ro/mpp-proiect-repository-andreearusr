@@ -13,6 +13,14 @@ public class Ticket extends Entity<Long>{
         this.buyerName = buyerName;
     }
 
+    public Ticket(Long showId, Long employeeId, String buyerName) {
+        super(0L);
+        this.showId = showId;
+        this.employeeId = employeeId;
+        this.buyerName = buyerName;
+    }
+
+
     public Long getShowId() {
         return showId;
     }
@@ -39,9 +47,6 @@ public class Ticket extends Entity<Long>{
 
     @Override
     public String toString() {
-        return "Bilet- Cod:" + super.toString() + " Nume cumparator:" + buyerName +
-                "\nSpectacolId:" + getShowId() +
-                "\nAngajatId:" +  getEmployeeId();
-
+        return "Bilet- Cod:" + super.toString() + " Nume cumparator:" + buyerName;
     }
 }

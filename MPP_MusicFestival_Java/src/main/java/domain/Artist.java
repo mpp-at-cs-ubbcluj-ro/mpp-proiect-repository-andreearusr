@@ -14,6 +14,15 @@ public class Artist extends Entity<Long> {
         this.originCountry = originCountry;
     }
 
+    public Artist(String firstName, String lastName, int age, String originCountry) {
+        super(0L);
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.originCountry = originCountry;
+    }
+
+
     public String getFirstName() {
         return firstName;
     }

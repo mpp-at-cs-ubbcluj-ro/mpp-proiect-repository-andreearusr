@@ -6,11 +6,11 @@ import java.util.List;
 
 public interface Repository<ID, E extends Entity<ID>> {
 
-    E save(E entity);
+    void save(E entity);
 
-    E delete(ID id);
+    void delete(ID id);
 
-    E update(ID id, E entity);
+    void update(ID id, E entity);
 
     E findOne(ID id);
 

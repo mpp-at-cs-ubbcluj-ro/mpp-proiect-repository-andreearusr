@@ -88,9 +88,7 @@ public class TestDomain {
         assertEquals(ticket.getShowId(), 43L);
         assertEquals(ticket.getEmployeeId(), 78L);
         assertEquals(ticket.getBuyerName(), "Andreea Rus");
-        assertEquals(ticket.toString(), "Bilet- Cod:67 Nume cumparator:Andreea Rus" +
-                "\nSpectacolId:43" +
-                "\nAngajatId:78");
+        assertEquals(ticket.toString(), "Bilet- Cod:67 Nume cumparator:Andreea Rus");
 
         Show show1 = new Show(56L, "VivaReggaeton", "Reggaeton partyy",
                 artist, Timestamp.valueOf("2019-08-11 17:00:00"), "Bucuresti", 3000, 150);
@@ -106,9 +104,7 @@ public class TestDomain {
         assertEquals(ticket.getShowId(), 56L);
         assertEquals(ticket.getEmployeeId(), 99L);
         assertEquals(ticket.getBuyerName(), "Maria Runcan");
-        assertEquals(ticket.toString(), "Bilet- Cod:123 Nume cumparator:Maria Runcan" +
-                "\nSpectacolId:56" +
-                "\nAngajatId:99");
+        assertEquals(ticket.toString(), "Bilet- Cod:123 Nume cumparator:Maria Runcan");
 
 
     }

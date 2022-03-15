@@ -4,4 +4,6 @@ public interface OfficeEmployeeRepository extends Repository<Long, domain.Office
     Long getId(String username);
 
     String getPassword(Long id);
+
+    Long getId(Long CNP);
 }

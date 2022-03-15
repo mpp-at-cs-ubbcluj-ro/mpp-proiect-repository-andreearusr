@@ -1,0 +1,55 @@
+10 Mar 2022 17:17:45,576 INFO  repository.ArtistDBRepository 21 <init> - Initializing ArtistDBRepository with properties: {} 
+10 Mar 2022 17:17:45,582 TRACE repository.ArtistDBRepository 48 findAll - Enter
+10 Mar 2022 17:17:45,582 TRACE repository.JdbcUtils 46 getConnection - Enter
+10 Mar 2022 17:17:45,583 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+10 Mar 2022 17:17:45,583 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... null
+10 Mar 2022 17:17:45,583 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+10 Mar 2022 17:17:45,583 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+10 Mar 2022 17:17:45,586 ERROR repository.JdbcUtils 39 getNewConnection - java.sql.SQLException: The url cannot be null
+10 Mar 2022 17:17:45,588 TRACE repository.JdbcUtils 55 getConnection - Exit
+11 Mar 2022 19:14:58,876 INFO  repository.ArtistDBRepository 21 <init> - Initializing ArtistDBRepository with properties: {} 
+11 Mar 2022 19:14:58,882 TRACE repository.ArtistDBRepository 94 findAll - Enter
+11 Mar 2022 19:14:58,882 TRACE repository.JdbcUtils 46 getConnection - Enter
+11 Mar 2022 19:14:58,882 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2022 19:14:58,882 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... null
+11 Mar 2022 19:14:58,883 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+11 Mar 2022 19:14:58,883 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+11 Mar 2022 19:14:58,887 ERROR repository.JdbcUtils 39 getNewConnection - java.sql.SQLException: The url cannot be null
+11 Mar 2022 19:14:58,887 TRACE repository.JdbcUtils 55 getConnection - Exit
+11 Mar 2022 19:15:14,530 INFO  repository.ArtistDBRepository 21 <init> - Initializing ArtistDBRepository with properties: {} 
+11 Mar 2022 19:15:14,534 TRACE repository.ArtistDBRepository 94 findAll - Enter
+11 Mar 2022 19:15:14,535 TRACE repository.JdbcUtils 46 getConnection - Enter
+11 Mar 2022 19:15:14,535 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2022 19:15:14,535 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... null
+11 Mar 2022 19:15:14,535 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+11 Mar 2022 19:15:14,535 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+11 Mar 2022 19:15:14,537 ERROR repository.JdbcUtils 39 getNewConnection - java.sql.SQLException: The url cannot be null
+11 Mar 2022 19:15:14,538 TRACE repository.JdbcUtils 55 getConnection - Exit
+11 Mar 2022 19:15:47,765 INFO  repository.ArtistDBRepository 21 <init> - Initializing ArtistDBRepository with properties: {} 
+11 Mar 2022 19:15:47,773 TRACE repository.ArtistDBRepository 94 findAll - Enter
+11 Mar 2022 19:15:47,773 TRACE repository.JdbcUtils 46 getConnection - Enter
+11 Mar 2022 19:15:47,773 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2022 19:15:47,773 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... null
+11 Mar 2022 19:15:47,774 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+11 Mar 2022 19:15:47,774 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+11 Mar 2022 19:15:47,776 ERROR repository.JdbcUtils 39 getNewConnection - java.sql.SQLException: The url cannot be null
+11 Mar 2022 19:15:47,778 TRACE repository.JdbcUtils 55 getConnection - Exit
+11 Mar 2022 19:16:09,436 INFO  repository.ArtistDBRepository 21 <init> - Initializing ArtistDBRepository with properties: {} 
+11 Mar 2022 19:16:15,909 INFO  repository.ArtistDBRepository 21 <init> - Initializing ArtistDBRepository with properties: {} 
+11 Mar 2022 19:16:15,914 TRACE repository.ArtistDBRepository 94 findAll - Enter
+11 Mar 2022 19:16:15,914 TRACE repository.JdbcUtils 46 getConnection - Enter
+11 Mar 2022 19:16:15,914 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2022 19:16:15,914 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... null
+11 Mar 2022 19:16:15,915 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+11 Mar 2022 19:16:15,935 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+11 Mar 2022 19:16:15,937 ERROR repository.JdbcUtils 39 getNewConnection - java.sql.SQLException: The url cannot be null
+11 Mar 2022 19:16:15,938 TRACE repository.JdbcUtils 55 getConnection - Exit
+11 Mar 2022 20:43:07,214 INFO  repository.ArtistDBRepository 21 <init> - Initializing ArtistDBRepository with properties: {} 
+11 Mar 2022 20:43:07,219 TRACE repository.ArtistDBRepository 94 findAll - Enter
+11 Mar 2022 20:43:07,220 TRACE repository.JdbcUtils 46 getConnection - Enter
+11 Mar 2022 20:43:07,220 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+11 Mar 2022 20:43:07,220 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... null
+11 Mar 2022 20:43:07,220 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+11 Mar 2022 20:43:07,221 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+11 Mar 2022 20:43:07,223 ERROR repository.JdbcUtils 39 getNewConnection - java.sql.SQLException: The url cannot be null
+11 Mar 2022 20:43:07,224 TRACE repository.JdbcUtils 55 getConnection - Exit
