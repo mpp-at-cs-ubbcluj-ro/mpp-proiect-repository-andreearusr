@@ -3929,3 +3929,231 @@ Data si ora:2022-04-12 20:00:00.0 Locatia:Cluj-Napoca, Cluj Arena)
 15 Mar 2022 09:32:42,669 TRACE repository.JdbcUtils 46 getConnection - Enter
 15 Mar 2022 09:32:42,669 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@247310d0)
 15 Mar 2022 09:32:42,670 TRACE repository.TicketDBRepository 61 delete - Exit
+15 Mar 2022 09:50:44,116 INFO  repository.ArtistDBRepository 21 <init> - Initializing ArtistDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\databases//festival.db} 
+15 Mar 2022 09:50:44,131 TRACE repository.ArtistDBRepository 93 findAll - Enter
+15 Mar 2022 09:50:44,133 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:44,135 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+15 Mar 2022 09:50:44,136 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\databases//festival.db
+15 Mar 2022 09:50:44,138 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+15 Mar 2022 09:50:44,139 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+15 Mar 2022 09:50:45,226 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b29d1d2)
+15 Mar 2022 09:50:45,233 TRACE repository.ArtistDBRepository 114 findAll - Exit
+15 Mar 2022 09:50:45,246 TRACE repository.ArtistDBRepository 46 delete - Enter deleting artist with 2
+15 Mar 2022 09:50:45,247 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,249 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b29d1d2)
+15 Mar 2022 09:50:45,251 TRACE repository.ArtistDBRepository 56 delete - Exit
+15 Mar 2022 09:50:45,255 INFO  repository.OfficeEmployeeDBRepository 22 <init> - Initializing OfficeEmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\databases//festival.db} 
+15 Mar 2022 09:50:45,261 TRACE repository.OfficeEmployeeDBRepository 99 save - Enter saving office employee Cod angajat:0 Nume:Rus Prenume:Andreea CNP:6010109234332 
+15 Mar 2022 09:50:45,262 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,262 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+15 Mar 2022 09:50:45,263 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\databases//festival.db
+15 Mar 2022 09:50:45,264 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+15 Mar 2022 09:50:45,265 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+15 Mar 2022 09:50:45,269 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+15 Mar 2022 09:50:45,270 TRACE repository.OfficeEmployeeDBRepository 75 getId - Enter finding office employee id with CNP 6010109234332 
+15 Mar 2022 09:50:45,271 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,271 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+15 Mar 2022 09:50:45,274 TRACE repository.OfficeEmployeeDBRepository 84 getId - Exit with(5)
+15 Mar 2022 09:50:45,274 ERROR repository.OfficeEmployeeDBRepository 103 save - This entity already exists
+15 Mar 2022 09:50:45,275 TRACE repository.OfficeEmployeeDBRepository 99 save - Enter saving office employee Cod angajat:0 Nume:Moldovan Prenume:Andreea CNP:6050109234232 
+15 Mar 2022 09:50:45,276 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,278 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+15 Mar 2022 09:50:45,280 TRACE repository.OfficeEmployeeDBRepository 75 getId - Enter finding office employee id with CNP 6050109234232 
+15 Mar 2022 09:50:45,284 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,284 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+15 Mar 2022 09:50:45,286 TRACE repository.OfficeEmployeeDBRepository 84 getId - Exit with(4)
+15 Mar 2022 09:50:45,287 ERROR repository.OfficeEmployeeDBRepository 103 save - This entity already exists
+15 Mar 2022 09:50:45,288 TRACE repository.OfficeEmployeeDBRepository 141 findOne - Enter finding office employee with id 4 
+15 Mar 2022 09:50:45,289 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,290 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+15 Mar 2022 09:50:45,293 TRACE repository.OfficeEmployeeDBRepository 156 findOne - Exit with(Cod angajat:4 Nume:Moldovan Prenume:Andreea CNP:6050109234232)
+15 Mar 2022 09:50:45,294 TRACE repository.OfficeEmployeeDBRepository 170 findAll - Enter
+15 Mar 2022 09:50:45,295 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,295 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+15 Mar 2022 09:50:45,297 TRACE repository.OfficeEmployeeDBRepository 192 findAll - Exit
+15 Mar 2022 09:50:45,298 TRACE repository.OfficeEmployeeDBRepository 75 getId - Enter finding office employee id with CNP 6010109234332 
+15 Mar 2022 09:50:45,299 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,301 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+15 Mar 2022 09:50:45,303 TRACE repository.OfficeEmployeeDBRepository 84 getId - Exit with(5)
+15 Mar 2022 09:50:45,304 TRACE repository.OfficeEmployeeDBRepository 29 getId - Enter finding office employee id with username andre_10 
+15 Mar 2022 09:50:45,305 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,306 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+15 Mar 2022 09:50:45,308 TRACE repository.OfficeEmployeeDBRepository 38 getId - Exit with(4)
+15 Mar 2022 09:50:45,309 TRACE repository.OfficeEmployeeDBRepository 52 getPassword - Enter finding office employee password with id 3 
+15 Mar 2022 09:50:45,310 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,311 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+15 Mar 2022 09:50:45,313 TRACE repository.OfficeEmployeeDBRepository 69 getPassword - Exit: No office employee password found with id 3
+15 Mar 2022 09:50:45,313 TRACE repository.OfficeEmployeeDBRepository 122 delete - Enter deleting office employee with 3
+15 Mar 2022 09:50:45,313 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,314 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+15 Mar 2022 09:50:45,315 TRACE repository.OfficeEmployeeDBRepository 132 delete - Exit
+15 Mar 2022 09:50:45,323 INFO  repository.ShowDBRepository 21 <init> - Initializing ShowDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\databases//festival.db} 
+15 Mar 2022 09:50:45,323 TRACE repository.ShowDBRepository 68 findOne - Enter finding show with id 4 
+15 Mar 2022 09:50:45,324 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,325 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+15 Mar 2022 09:50:45,325 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\databases//festival.db
+15 Mar 2022 09:50:45,326 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+15 Mar 2022 09:50:45,327 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+15 Mar 2022 09:50:45,328 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c284af)
+15 Mar 2022 09:50:45,333 TRACE repository.ArtistDBRepository 65 findOne - Enter finding artist with id 1 
+15 Mar 2022 09:50:45,334 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,334 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b29d1d2)
+15 Mar 2022 09:50:45,335 TRACE repository.ArtistDBRepository 79 findOne - Exit with(Artist- Nume:Rauw Prenume:Alejandro Varsta:29 Tara origine:Puerto Rico)
+15 Mar 2022 09:50:45,361 TRACE repository.ShowDBRepository 86 findOne - Exit with(Spectacol- Nume:Latino Descriere:Haide sa dansam
+nume Artist:Alejandro
+Data si ora:2022-04-12 20:00:00.0 Locatia:Cluj-Napoca, Cluj Arena)
+15 Mar 2022 09:50:45,362 TRACE repository.ShowDBRepository 100 findAll - Enter
+15 Mar 2022 09:50:45,363 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,364 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c284af)
+15 Mar 2022 09:50:45,367 TRACE repository.ArtistDBRepository 65 findOne - Enter finding artist with id 1 
+15 Mar 2022 09:50:45,368 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,369 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b29d1d2)
+15 Mar 2022 09:50:45,371 TRACE repository.ArtistDBRepository 79 findOne - Exit with(Artist- Nume:Rauw Prenume:Alejandro Varsta:29 Tara origine:Puerto Rico)
+15 Mar 2022 09:50:45,373 TRACE repository.ArtistDBRepository 65 findOne - Enter finding artist with id 3 
+15 Mar 2022 09:50:45,373 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,374 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b29d1d2)
+15 Mar 2022 09:50:45,376 TRACE repository.ArtistDBRepository 79 findOne - Exit with(Artist- Nume:G Prenume:Karol Varsta:31 Tara origine:Colombia)
+15 Mar 2022 09:50:45,376 TRACE repository.ShowDBRepository 125 findAll - Exit
+15 Mar 2022 09:50:45,377 TRACE repository.ShowDBRepository 49 delete - Enter deleting show with 1
+15 Mar 2022 09:50:45,378 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,380 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c284af)
+15 Mar 2022 09:50:45,382 TRACE repository.ShowDBRepository 59 delete - Exit
+15 Mar 2022 09:50:45,382 TRACE repository.ShowDBRepository 131 getArtistsByDate - Enter
+15 Mar 2022 09:50:45,383 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,386 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c284af)
+15 Mar 2022 09:50:45,389 TRACE repository.ArtistDBRepository 65 findOne - Enter finding artist with id 1 
+15 Mar 2022 09:50:45,391 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,391 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b29d1d2)
+15 Mar 2022 09:50:45,393 TRACE repository.ArtistDBRepository 79 findOne - Exit with(Artist- Nume:Rauw Prenume:Alejandro Varsta:29 Tara origine:Puerto Rico)
+15 Mar 2022 09:50:45,393 TRACE repository.ShowDBRepository 158 getArtistsByDate - Exit
+15 Mar 2022 09:50:45,410 INFO  repository.TicketDBRepository 25 <init> - Initializing TicketDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\databases//festival.db} 
+15 Mar 2022 09:50:45,413 TRACE repository.TicketDBRepository 70 findOne - Enter finding ticket with id 2 
+15 Mar 2022 09:50:45,418 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,419 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+15 Mar 2022 09:50:45,422 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\databases//festival.db
+15 Mar 2022 09:50:45,423 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+15 Mar 2022 09:50:45,424 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+15 Mar 2022 09:50:45,427 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@247310d0)
+15 Mar 2022 09:50:45,432 TRACE repository.TicketDBRepository 83 findOne - Exit with(Bilet- Cod:2 Nume cumparator:Pruteanu Robert)
+15 Mar 2022 09:50:45,435 TRACE repository.TicketDBRepository 97 findAll - Enter
+15 Mar 2022 09:50:45,436 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,439 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@247310d0)
+15 Mar 2022 09:50:45,440 TRACE repository.TicketDBRepository 117 findAll - Exit
+15 Mar 2022 09:50:45,442 TRACE repository.TicketDBRepository 51 delete - Enter deleting ticket with 1
+15 Mar 2022 09:50:45,444 TRACE repository.JdbcUtils 46 getConnection - Enter
+15 Mar 2022 09:50:45,446 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@247310d0)
+15 Mar 2022 09:50:45,453 TRACE repository.TicketDBRepository 61 delete - Exit
+18 Mar 2022 20:05:02,341 INFO  repository.ArtistDBRepository 21 <init> - Initializing ArtistDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\databases//festival.db} 
+18 Mar 2022 20:05:02,350 TRACE repository.ArtistDBRepository 93 findAll - Enter
+18 Mar 2022 20:05:02,350 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,350 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+18 Mar 2022 20:05:02,351 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\databases//festival.db
+18 Mar 2022 20:05:02,351 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+18 Mar 2022 20:05:02,352 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+18 Mar 2022 20:05:02,848 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b29d1d2)
+18 Mar 2022 20:05:02,854 TRACE repository.ArtistDBRepository 114 findAll - Exit
+18 Mar 2022 20:05:02,865 TRACE repository.ArtistDBRepository 46 delete - Enter deleting artist with 2
+18 Mar 2022 20:05:02,866 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,866 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b29d1d2)
+18 Mar 2022 20:05:02,867 TRACE repository.ArtistDBRepository 56 delete - Exit
+18 Mar 2022 20:05:02,872 INFO  repository.OfficeEmployeeDBRepository 22 <init> - Initializing OfficeEmployeeDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\databases//festival.db} 
+18 Mar 2022 20:05:02,878 TRACE repository.OfficeEmployeeDBRepository 99 save - Enter saving office employee Cod angajat:0 Nume:Rus Prenume:Andreea CNP:6010109234332 
+18 Mar 2022 20:05:02,879 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,880 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+18 Mar 2022 20:05:02,880 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\databases//festival.db
+18 Mar 2022 20:05:02,880 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+18 Mar 2022 20:05:02,881 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+18 Mar 2022 20:05:02,882 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+18 Mar 2022 20:05:02,883 TRACE repository.OfficeEmployeeDBRepository 75 getId - Enter finding office employee id with CNP 6010109234332 
+18 Mar 2022 20:05:02,883 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,884 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+18 Mar 2022 20:05:02,885 TRACE repository.OfficeEmployeeDBRepository 84 getId - Exit with(5)
+18 Mar 2022 20:05:02,886 ERROR repository.OfficeEmployeeDBRepository 103 save - This entity already exists
+18 Mar 2022 20:05:02,886 TRACE repository.OfficeEmployeeDBRepository 99 save - Enter saving office employee Cod angajat:0 Nume:Moldovan Prenume:Andreea CNP:6050109234232 
+18 Mar 2022 20:05:02,887 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,887 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+18 Mar 2022 20:05:02,887 TRACE repository.OfficeEmployeeDBRepository 75 getId - Enter finding office employee id with CNP 6050109234232 
+18 Mar 2022 20:05:02,888 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,888 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+18 Mar 2022 20:05:02,889 TRACE repository.OfficeEmployeeDBRepository 84 getId - Exit with(4)
+18 Mar 2022 20:05:02,889 ERROR repository.OfficeEmployeeDBRepository 103 save - This entity already exists
+18 Mar 2022 20:05:02,890 TRACE repository.OfficeEmployeeDBRepository 141 findOne - Enter finding office employee with id 4 
+18 Mar 2022 20:05:02,890 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,890 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+18 Mar 2022 20:05:02,891 TRACE repository.OfficeEmployeeDBRepository 156 findOne - Exit with(Cod angajat:4 Nume:Moldovan Prenume:Andreea CNP:6050109234232)
+18 Mar 2022 20:05:02,892 TRACE repository.OfficeEmployeeDBRepository 170 findAll - Enter
+18 Mar 2022 20:05:02,892 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,892 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+18 Mar 2022 20:05:02,893 TRACE repository.OfficeEmployeeDBRepository 192 findAll - Exit
+18 Mar 2022 20:05:02,895 TRACE repository.OfficeEmployeeDBRepository 75 getId - Enter finding office employee id with CNP 6010109234332 
+18 Mar 2022 20:05:02,895 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,895 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+18 Mar 2022 20:05:02,896 TRACE repository.OfficeEmployeeDBRepository 84 getId - Exit with(5)
+18 Mar 2022 20:05:02,899 TRACE repository.OfficeEmployeeDBRepository 29 getId - Enter finding office employee id with username andre_10 
+18 Mar 2022 20:05:02,901 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,902 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+18 Mar 2022 20:05:02,903 TRACE repository.OfficeEmployeeDBRepository 38 getId - Exit with(4)
+18 Mar 2022 20:05:02,903 TRACE repository.OfficeEmployeeDBRepository 52 getPassword - Enter finding office employee password with id 3 
+18 Mar 2022 20:05:02,904 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,904 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+18 Mar 2022 20:05:02,905 TRACE repository.OfficeEmployeeDBRepository 69 getPassword - Exit: No office employee password found with id 3
+18 Mar 2022 20:05:02,906 TRACE repository.OfficeEmployeeDBRepository 122 delete - Enter deleting office employee with 3
+18 Mar 2022 20:05:02,906 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,906 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@268f106e)
+18 Mar 2022 20:05:02,907 TRACE repository.OfficeEmployeeDBRepository 132 delete - Exit
+18 Mar 2022 20:05:02,911 INFO  repository.ShowDBRepository 21 <init> - Initializing ShowDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\databases//festival.db} 
+18 Mar 2022 20:05:02,912 TRACE repository.ShowDBRepository 68 findOne - Enter finding show with id 4 
+18 Mar 2022 20:05:02,913 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,913 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+18 Mar 2022 20:05:02,913 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\databases//festival.db
+18 Mar 2022 20:05:02,913 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+18 Mar 2022 20:05:02,913 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+18 Mar 2022 20:05:02,913 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c284af)
+18 Mar 2022 20:05:02,919 TRACE repository.ArtistDBRepository 65 findOne - Enter finding artist with id 1 
+18 Mar 2022 20:05:02,920 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,920 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b29d1d2)
+18 Mar 2022 20:05:02,921 TRACE repository.ArtistDBRepository 79 findOne - Exit with(Artist- Nume:Rauw Prenume:Alejandro Varsta:29 Tara origine:Puerto Rico)
+18 Mar 2022 20:05:02,933 TRACE repository.ShowDBRepository 86 findOne - Exit with(Spectacol- Nume:Latino Descriere:Haide sa dansam
+nume Artist:Alejandro
+Data si ora:2022-04-12 20:00:00.0 Locatia:Cluj-Napoca, Cluj Arena)
+18 Mar 2022 20:05:02,934 TRACE repository.ShowDBRepository 100 findAll - Enter
+18 Mar 2022 20:05:02,934 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,935 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c284af)
+18 Mar 2022 20:05:02,935 TRACE repository.ArtistDBRepository 65 findOne - Enter finding artist with id 1 
+18 Mar 2022 20:05:02,937 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,937 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b29d1d2)
+18 Mar 2022 20:05:02,938 TRACE repository.ArtistDBRepository 79 findOne - Exit with(Artist- Nume:Rauw Prenume:Alejandro Varsta:29 Tara origine:Puerto Rico)
+18 Mar 2022 20:05:02,939 TRACE repository.ArtistDBRepository 65 findOne - Enter finding artist with id 3 
+18 Mar 2022 20:05:02,939 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,939 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b29d1d2)
+18 Mar 2022 20:05:02,940 TRACE repository.ArtistDBRepository 79 findOne - Exit with(Artist- Nume:G Prenume:Karol Varsta:31 Tara origine:Colombia)
+18 Mar 2022 20:05:02,941 TRACE repository.ShowDBRepository 125 findAll - Exit
+18 Mar 2022 20:05:02,941 TRACE repository.ShowDBRepository 49 delete - Enter deleting show with 1
+18 Mar 2022 20:05:02,941 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,942 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c284af)
+18 Mar 2022 20:05:02,942 TRACE repository.ShowDBRepository 59 delete - Exit
+18 Mar 2022 20:05:02,943 TRACE repository.ShowDBRepository 131 getArtistsByDate - Enter
+18 Mar 2022 20:05:02,943 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,944 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6c284af)
+18 Mar 2022 20:05:02,946 TRACE repository.ArtistDBRepository 65 findOne - Enter finding artist with id 1 
+18 Mar 2022 20:05:02,946 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,946 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4b29d1d2)
+18 Mar 2022 20:05:02,948 TRACE repository.ArtistDBRepository 79 findOne - Exit with(Artist- Nume:Rauw Prenume:Alejandro Varsta:29 Tara origine:Puerto Rico)
+18 Mar 2022 20:05:02,948 TRACE repository.ShowDBRepository 158 getArtistsByDate - Exit
+18 Mar 2022 20:05:02,953 INFO  repository.TicketDBRepository 25 <init> - Initializing TicketDBRepository with properties: {jdbc.url=jdbc:sqlite:C:\databases//festival.db} 
+18 Mar 2022 20:05:02,954 TRACE repository.TicketDBRepository 70 findOne - Enter finding ticket with id 2 
+18 Mar 2022 20:05:02,954 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,954 TRACE repository.JdbcUtils 24 getNewConnection - Enter
+18 Mar 2022 20:05:02,954 INFO  repository.JdbcUtils 29 getNewConnection - trying to connect to database ... jdbc:sqlite:C:\databases//festival.db
+18 Mar 2022 20:05:02,955 INFO  repository.JdbcUtils 30 getNewConnection - user: null
+18 Mar 2022 20:05:02,955 INFO  repository.JdbcUtils 31 getNewConnection - pass: null
+18 Mar 2022 20:05:02,956 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@247310d0)
+18 Mar 2022 20:05:02,959 TRACE repository.TicketDBRepository 83 findOne - Exit with(Bilet- Cod:2 Nume cumparator:Pruteanu Robert)
+18 Mar 2022 20:05:02,959 TRACE repository.TicketDBRepository 97 findAll - Enter
+18 Mar 2022 20:05:02,959 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,960 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@247310d0)
+18 Mar 2022 20:05:02,963 TRACE repository.TicketDBRepository 117 findAll - Exit
+18 Mar 2022 20:05:02,964 TRACE repository.TicketDBRepository 51 delete - Enter deleting ticket with 1
+18 Mar 2022 20:05:02,964 TRACE repository.JdbcUtils 46 getConnection - Enter
+18 Mar 2022 20:05:02,965 TRACE repository.JdbcUtils 55 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@247310d0)
+18 Mar 2022 20:05:02,965 TRACE repository.TicketDBRepository 61 delete - Exit
