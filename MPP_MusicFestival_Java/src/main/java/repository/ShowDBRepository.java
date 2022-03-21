@@ -28,12 +28,12 @@ public class ShowDBRepository implements ShowRepository {
         logger.traceEntry("saving show {} ", entity);
         Connection con = dbUtils.getConnection();
 
-        try (PreparedStatement preStmt = con.prepareStatement("insert into Show(show_name, description, date_time, show_location, seats_available, seats_sold, artist_id) values (?,?,?,?,?,?,?)")) {
+        try (PreparedStatement preStmt = con.prepareStatement("insert into Show(show_name, description, date_time, show_location, seats_total, seats_sold, artist_id) values (?,?,?,?,?,?,?)")) {
             preStmt.setString(1, entity.getShowName());
             preStmt.setString(2, entity.getDescription());
             preStmt.setString(3, entity.getDateTime().toString());
             preStmt.setString(4, entity.getShowLocation());
-            preStmt.setInt(5, entity.getSeatsAvailable());
+            preStmt.setInt(5, entity.getSeatsTotal());
             preStmt.setInt(6, entity.getSeatsSold());
             preStmt.setLong(7, entity.getArtist().getId());
             preStmt.executeUpdate();
@@ -61,6 +61,22 @@ public class ShowDBRepository implements ShowRepository {
 
     @Override
     public void update(Long aLong, Show entity) {
+        logger.traceEntry("update show with id {} ", aLong);
+        Connection con = dbUtils.getConnection();
+
+        try (PreparedStatement preStmt = con.prepareStatement("update Show SET show_name=?, description=?, date_time=?, show_location=?, seats_total=?, seats_sold=?, artist_id=? where id=?")){
+            preStmt.setString(1, entity.getShowName());
+            preStmt.setString(2, entity.getDescription());
+            preStmt.setString(3, entity.getDateTime().toString());
+            preStmt.setString(4, entity.getShowLocation());
+            preStmt.setInt(5, entity.getSeatsTotal());
+            preStmt.setInt(6, entity.getSeatsSold());
+            preStmt.setLong(7, entity.getArtist().getId());
+            preStmt.setLong(8, aLong);
+            preStmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -77,12 +93,12 @@ public class ShowDBRepository implements ShowRepository {
                     String description = result.getString("description");
                     Timestamp date_time = result.getTimestamp("date_time");
                     String show_location = result.getString("show_location");
-                    int seats_available = result.getInt("seats_available");
+                    int seats_total = result.getInt("seats_total");
                     int seats_sold = result.getInt("seats_sold");
                     long artist_id = result.getLong("artist_id");
 
                     Artist artist = artistRepository.findOne(artist_id);
-                    Show show = new Show(id, show_name, description, artist, date_time, show_location, seats_available, seats_sold);
+                    Show show = new Show(id, show_name, description, artist, date_time, show_location, seats_total, seats_sold);
                     logger.traceExit(show);
                     return show;
                 }
@@ -108,12 +124,12 @@ public class ShowDBRepository implements ShowRepository {
                     String description = result.getString("description");
                     Timestamp date_time = result.getTimestamp("date_time");
                     String show_location = result.getString("show_location");
-                    int seats_available = result.getInt("seats_available");
+                    int seats_total = result.getInt("seats_total");
                     int seats_sold = result.getInt("seats_sold");
                     long artist_id = result.getLong("artist_id");
 
                     Artist artist = artistRepository.findOne(artist_id);
-                    Show show = new Show(id, show_name, description, artist, date_time, show_location, seats_available, seats_sold);
+                    Show show = new Show(id, show_name, description, artist, date_time, show_location, seats_total, seats_sold);
                     shows.add(show);
                 }
             }
@@ -141,12 +157,12 @@ public class ShowDBRepository implements ShowRepository {
                     String description = result.getString("description");
                     Timestamp date_time = result.getTimestamp("date_time");
                     String show_location = result.getString("show_location");
-                    int seats_available = result.getInt("seats_available");
+                    int seats_total = result.getInt("seats_total");
                     int seats_sold = result.getInt("seats_sold");
                     long artist_id = result.getLong("artist_id");
 
                     Artist artist = artistRepository.findOne(artist_id);
-                    Show show = new Show(id, show_name, description, artist, date_time, show_location, seats_available, seats_sold);
+                    Show show = new Show(id, show_name, description, artist, date_time, show_location, seats_total, seats_sold);
                     shows.add(show);
                 }
             }

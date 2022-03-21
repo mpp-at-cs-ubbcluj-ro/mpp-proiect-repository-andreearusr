@@ -1,5 +1,7 @@
 package repository;
 
 
-public interface TicketRepository extends Repository<Long, domain.Ticket> {
+import domain.Ticket;
+
+public interface TicketRepository extends Repository<Long, Ticket> {
 }

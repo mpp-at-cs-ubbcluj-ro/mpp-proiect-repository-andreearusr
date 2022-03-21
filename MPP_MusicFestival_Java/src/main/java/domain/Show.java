@@ -9,28 +9,28 @@ public class Show extends Entity<Long>{
     private Artist artist;
     private Timestamp dateTime;
     private String showLocation;
-    private int seatsAvailable;
+    private int seatsTotal;
     private int seatsSold;
 
-    public Show(Long id, String showName, String description, Artist artist, Timestamp dateTime, String showLocation, int seatsAvailable, int seatsSold) {
+    public Show(Long id, String showName, String description, Artist artist, Timestamp dateTime, String showLocation, int seatsTotal, int seatsSold) {
         super(id);
         this.showName = showName;
         this.description = description;
         this.artist = artist;
         this.dateTime = dateTime;
         this.showLocation = showLocation;
-        this.seatsAvailable = seatsAvailable;
+        this.seatsTotal = seatsTotal;
         this.seatsSold = seatsSold;
     }
 
-    public Show(String showName, String description, Artist artist, Timestamp dateTime, String showLocation, int seatsAvailable, int seatsSold) {
+    public Show(String showName, String description, Artist artist, Timestamp dateTime, String showLocation, int seatsTotal, int seatsSold) {
         super(0L);
         this.showName = showName;
         this.description = description;
         this.artist = artist;
         this.dateTime = dateTime;
         this.showLocation = showLocation;
-        this.seatsAvailable = seatsAvailable;
+        this.seatsTotal = seatsTotal;
         this.seatsSold = seatsSold;
     }
 
@@ -74,12 +74,12 @@ public class Show extends Entity<Long>{
         this.showLocation = showLocation;
     }
 
-    public int getSeatsAvailable() {
-        return seatsAvailable;
+    public int getSeatsTotal() {
+        return seatsTotal;
     }
 
-    public void setSeatsAvailable(int seatsAvailable) {
-        this.seatsAvailable = seatsAvailable;
+    public void setSeatsTotal(int seatsTotal) {
+        this.seatsTotal = seatsTotal;
     }
 
     public int getSeatsSold() {

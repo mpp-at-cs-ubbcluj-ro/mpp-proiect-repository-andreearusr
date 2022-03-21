@@ -1,4 +1,6 @@
 package repository;
 
-public interface ArtistRepository extends Repository<Long, domain.Artist> {
+import domain.Artist;
+
+public interface ArtistRepository extends Repository<Long, Artist> {
 }

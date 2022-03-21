@@ -1,18 +1,20 @@
-import domain.Artist;
-import domain.OfficeEmployee;
-import domain.Show;
-import domain.Ticket;
+import controllers.EmployeeController;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import repository.ArtistDBRepository;
 import repository.OfficeEmployeeDBRepository;
 import repository.ShowDBRepository;
 import repository.TicketDBRepository;
+import service.LogService;
+import service.Service;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.Timestamp;
-import java.util.Date;
 import java.util.Properties;
 
+/*
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello!");
@@ -68,5 +70,52 @@ public class Main {
 
         ticketRepo.delete(1L);
 
+    }
+}
+*/
+
+public class Main extends Application {
+
+    private LogService logService;
+    private Service service;
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        Properties props = new Properties();
+        try {
+            props.load(new FileReader("bd.config"));
+        } catch (IOException e) {
+            System.out.println("Cannot find bd.config " + e);
+        }
+
+        ArtistDBRepository artistDBRepository = new ArtistDBRepository(props);
+        OfficeEmployeeDBRepository officeEmployeeDBRepository = new OfficeEmployeeDBRepository(props);
+        ShowDBRepository showDBRepository = new ShowDBRepository(props, artistDBRepository);
+        TicketDBRepository ticketDBRepository = new TicketDBRepository(props, showDBRepository, officeEmployeeDBRepository);
+
+        logService = new LogService(officeEmployeeDBRepository);
+        service = new Service(artistDBRepository, officeEmployeeDBRepository, showDBRepository, ticketDBRepository);
+
+        initView(primaryStage);
+        primaryStage.setResizable(false);
+        primaryStage.setTitle("Music Festival");
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+
+    private void initView(Stage primaryStage) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("employee.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        primaryStage.setTitle("Music Festival");
+        primaryStage.setScene(scene);
+
+        EmployeeController loginController = fxmlLoader.getController();
+        loginController.setLogin(logService);
+        loginController.setService(service);
+        loginController.setStage(primaryStage);
     }
 }

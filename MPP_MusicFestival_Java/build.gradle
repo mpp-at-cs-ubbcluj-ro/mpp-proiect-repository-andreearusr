@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
 }
 
 group 'MPP_MusicFestival_Java'
@@ -22,7 +23,11 @@ dependencies {
 
 }
 application{
-    mainClass = 'Main'
+    mainClass = 'MainJava'
+}
+javafx {
+    version = '16'
+    modules = ['javafx.controls', 'javafx.fxml']
 }
 jar{
     duplicatesStrategy (DuplicatesStrategy.EXCLUDE)

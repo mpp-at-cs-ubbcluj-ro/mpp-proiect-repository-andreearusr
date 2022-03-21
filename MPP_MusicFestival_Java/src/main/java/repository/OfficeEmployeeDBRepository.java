@@ -1,6 +1,5 @@
 package repository;
 
-import domain.Artist;
 import domain.OfficeEmployee;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
