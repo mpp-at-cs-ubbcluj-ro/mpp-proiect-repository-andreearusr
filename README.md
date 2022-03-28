@@ -7,3 +7,4 @@ branch Lab3CSharp - clasele din domain si interfetele repo din C# in noul proiec
 branch Lab4Java - DB repository pentru entitati si Jurnalizare in Java
 branch Lab4Csharp - DB repository pentru entitati si Jurnalizare in C#
 branch Lab5Java - Service si interfata grafica in Java
+branch Lab6CSharp - Service si interfata grafica in C#
