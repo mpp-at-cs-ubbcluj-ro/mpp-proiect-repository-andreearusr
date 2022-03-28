@@ -5,8 +5,8 @@ using System.Text;
 
 namespace MPP_MusicFestival.Repository
 {
-    interface ShowRepository: Repository<long, Show>
+    public interface ShowRepository: Repository<long, Show>
     {
-        IEnumerable<Show> getArtistsByDate(DateTime date);
+        List<Show> getArtistsByDate(DateTime date);
     }
 }

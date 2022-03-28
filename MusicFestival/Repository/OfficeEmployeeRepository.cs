@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MPP_MusicFestival.Repository
 {
-    interface OfficeEmployeeRepository : Repository<long, OfficeEmployee>
+    public interface OfficeEmployeeRepository : Repository<long, OfficeEmployee>
     {
         long getId(string username);
 

@@ -39,10 +39,10 @@ namespace MusicFestival.Repository
             }
         }
 
-        public IEnumerable<OfficeEmployee> findAll()
+        public List<OfficeEmployee> findAll()
         {
             IDbConnection con = DBUtils.getConnection(props);
-            IList<OfficeEmployee> officeEmployees = new List<OfficeEmployee>();
+            List<OfficeEmployee> officeEmployees = new List<OfficeEmployee>();
             using (var comm = con.CreateCommand())
             {
                 comm.CommandText = "select * from OfficeEmployee";

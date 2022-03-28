@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MPP_MusicFestival.Domain
 {
-    class Ticket : Entity<long>
+    public class Ticket : Entity<long>
     {
 
         public long showId { get; set; }

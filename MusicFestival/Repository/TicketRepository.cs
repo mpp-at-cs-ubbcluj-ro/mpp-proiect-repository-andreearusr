@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MPP_MusicFestival.Repository
 {
-    interface TicketRepository: Repository<long, Ticket>
+    public interface TicketRepository: Repository<long, Ticket>
     { 
     }
 }

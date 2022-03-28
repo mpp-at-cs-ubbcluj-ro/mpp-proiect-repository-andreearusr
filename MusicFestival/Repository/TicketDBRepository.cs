@@ -46,10 +46,10 @@ namespace MusicFestival.Repository
             }
         }
 
-        public IEnumerable<Ticket> findAll()
+        public List<Ticket> findAll()
         {
             IDbConnection con = DBUtils.getConnection(props);
-            IList<Ticket> tickets = new List<Ticket>();
+            List<Ticket> tickets = new List<Ticket>();
             using (var comm = con.CreateCommand())
             {
                 comm.CommandText = "select * from Ticket";

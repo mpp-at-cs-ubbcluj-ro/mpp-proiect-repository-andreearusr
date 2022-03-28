@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MPP_MusicFestival.Domain
 {
-    class OfficeEmployee : Entity<long>
+    public class OfficeEmployee : Entity<long>
     {
         public string firstName { get; set; }
         public string lastName { get; set; }

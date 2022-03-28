@@ -40,10 +40,10 @@ namespace MusicFestival.Repository
         }
     
 
-        public IEnumerable<Artist> findAll()
+        public List<Artist> findAll()
         {
             IDbConnection con = DBUtils.getConnection(props);
-            IList<Artist> artists = new List<Artist>();
+            List<Artist> artists = new List<Artist>();
             using (var comm = con.CreateCommand())
             {
                 comm.CommandText = "select * from Artist";

@@ -42,10 +42,10 @@ namespace MusicFestival.Repository
             }
         }
 
-        public IEnumerable<Show> findAll()
+        public List<Show> findAll()
         {
             IDbConnection con = DBUtils.getConnection(props);
-            IList<Show> shows = new List<Show>();
+            List<Show> shows = new List<Show>();
             using (var comm = con.CreateCommand())
             {
                 comm.CommandText = "select * from Show";
@@ -57,7 +57,7 @@ namespace MusicFestival.Repository
                         long id = dataR.GetInt32(0);
                         String show_name = dataR.GetString(1);
                         String description = dataR.GetString(2);
-                        DateTime date_time = dataR.GetDateTime(3);
+                        DateTime date_time = DateTime.Parse(dataR.GetString(3));
                         String show_location = dataR.GetString(4);
                         int seats_available = dataR.GetInt32(5);
                         int seats_sold = dataR.GetInt32(6);
@@ -73,17 +73,17 @@ namespace MusicFestival.Repository
             return shows;
         }
 
-        public IEnumerable<Show> getArtistsByDate(DateTime date)
+        public List<Show> getArtistsByDate(DateTime date)
         {
             IDbConnection con = DBUtils.getConnection(props);
-            IList<Show> shows = new List<Show>();
+            List<Show> shows = new List<Show>();
             using (var comm = con.CreateCommand())
             {
-                comm.CommandText = "select * from Show where date(Show.date_time) = @date order by Show.artist_id";
+                comm.CommandText = "select * from Show where substr(Show.date_time, 1, 9)=@date order by Show.artist_id";
 
                 var paramDate = comm.CreateParameter();
                 paramDate.ParameterName = "@date";
-                paramDate.Value = date.ToString().Substring(0,10);
+                paramDate.Value = date.ToString().Substring(0,9);
                 comm.Parameters.Add(paramDate);
 
                 using (var dataR = comm.ExecuteReader())
@@ -93,7 +93,7 @@ namespace MusicFestival.Repository
                         long id = dataR.GetInt32(0);
                         String show_name = dataR.GetString(1);
                         String description = dataR.GetString(2);
-                        DateTime date_time = dataR.GetDateTime(3);
+                        DateTime date_time = DateTime.Parse(dataR.GetString(3));
                         String show_location = dataR.GetString(4);
                         int seats_available = dataR.GetInt32(5);
                         int seats_sold = dataR.GetInt32(6);
@@ -127,10 +127,10 @@ namespace MusicFestival.Repository
                     if (dataR.Read())
                     {
                         long idS = dataR.GetInt32(0);
-                        String show_name = dataR.GetString(1);
-                        String description = dataR.GetString(2);
-                        DateTime date_time = dataR.GetDateTime(3);
-                        String show_location = dataR.GetString(4);
+                        string show_name = dataR.GetString(1);
+                        string description = dataR.GetString(2);
+                        DateTime date_time = DateTime.Parse(dataR.GetString(3));
+                        string show_location = dataR.GetString(4);
                         int seats_available = dataR.GetInt32(5);
                         int seats_sold = dataR.GetInt32(6);
                         long artistId = dataR.GetInt32(7);
@@ -197,7 +197,26 @@ namespace MusicFestival.Repository
 
         public void update(long id, Show entity)
         {
-            throw new NotImplementedException();
+            IDbConnection con = DBUtils.getConnection(props);
+            using (var comm = con.CreateCommand())
+            {
+                comm.CommandText = "update Show set seats_sold=@seats_sold where id=@id";
+
+                var paramSold = comm.CreateParameter();
+                paramSold.ParameterName = "@seats_sold";
+                paramSold.Value = entity.seatsSold;
+                comm.Parameters.Add(paramSold);
+
+                var paramId = comm.CreateParameter();
+                paramId.ParameterName = "@id";
+                paramId.Value = id;
+                comm.Parameters.Add(paramId);
+
+
+                var dataR = comm.ExecuteNonQuery();
+                //if (dataR == 0)
+                //  throw new RepositoryException("No task deleted!");
+            }
         }
     }
 }
