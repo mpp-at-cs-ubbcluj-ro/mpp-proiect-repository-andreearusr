@@ -1,6 +1,6 @@
 
+/*
 import domain.*;
-import festival.domain.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -125,7 +125,7 @@ public class TestDomain {
         assertEquals(show.getArtist().getId(), 1);
         assertEquals(show.getDateTime(), Timestamp.valueOf("2022-05-29 20:30:00"));
         assertEquals(show.getShowLocation(), "Ibitza");
-        assertEquals(show.getSeatsAvailable(), 20000);
+        assertEquals(show.getSeatsTotal(), 20000);
         assertEquals(show.getSeatsSold(), 1500);
         assertEquals(show.toString(), "Spectacol- Nume:LatinoParty Descriere:Spectacol cu artisti latino din toate regiunile, nu ratati!" +
                 "\nnume Artist:Anuel" +
@@ -134,7 +134,7 @@ public class TestDomain {
         show.setDateTime(Timestamp.valueOf("2022-07-15 21:00:00"));
         show.setId(500L);
         show.setShowName("LatinoBaby");
-        show.setSeatsAvailable(20200);
+        show.setSeatsTotal(20200);
         show.setSeatsSold(1900);
         show.setShowLocation("Ibitza Beach Club");
         show.setDescription("Spectacol cu artisti latino din toate regiunile");
@@ -147,7 +147,7 @@ public class TestDomain {
         assertEquals(show.getArtist().getId(), 1);
         assertEquals(show.getDateTime(), Timestamp.valueOf("2022-07-15 21:00:00"));
         assertEquals(show.getShowLocation(), "Ibitza Beach Club");
-        assertEquals(show.getSeatsAvailable(), 20200);
+        assertEquals(show.getSeatsTotal(), 20200);
         assertEquals(show.getSeatsSold(), 1900);
         assertEquals(show.toString(), "Spectacol- Nume:LatinoBaby Descriere:Spectacol cu artisti latino din toate regiunile" +
                 "\nnume Artist:Anuel" +
@@ -156,3 +156,6 @@ public class TestDomain {
     }
 
 }
+
+
+ */

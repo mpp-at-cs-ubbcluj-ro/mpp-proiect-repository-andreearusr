@@ -1,2 +1,8 @@
 rootProject.name = 'MPP_MusicFestival_Java'
+include 'FestivalModel'
+include 'FestivalPersistence'
+include 'FestivalServices'
+include 'FestivalServer'
+include 'FestivalClientFX'
+include 'FestivalNetworking'
 
