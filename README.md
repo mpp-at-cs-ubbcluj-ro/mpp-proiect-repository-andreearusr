@@ -9,3 +9,4 @@ branch Lab4Csharp - DB repository pentru entitati si Jurnalizare in C#
 branch Lab5Java - Service si interfata grafica in Java
 branch Lab6CSharp - Service si interfata grafica in C#
 branch Lab7Java - Networking + Actualizare date in Java
+branch Lab8CSharp - Networking + Actualizare date in C#
