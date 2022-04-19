@@ -7,8 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import network.rpcprotocol.FestivalServicesRpcProxy;
-import services.IFestivalObserver;
+import festival.network.rpcprotocol.FestivalServicesRpcProxy;
 import services.IFestivalService;
 
 import java.io.IOException;

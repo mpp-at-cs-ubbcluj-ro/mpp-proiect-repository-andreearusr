@@ -1,0 +1,78 @@
+syntax = "proto3";
+package chat.protocol;
+
+option java_package = "festival.network.protobuffprotocol";
+option java_outer_classname = "FestivalProtobufs";
+
+message StringM{
+  string data=1;
+}
+message LongM{
+  uint64 id=1;
+}
+
+message Artist{
+  uint64 id = 1;
+  string firstName = 2;
+  string lastName = 3;
+  uint32 age = 4;
+  string originCountry = 5;
+}
+
+message OfficeEmployee{
+  uint64 id = 1;
+  string firstName = 2;
+  string lastName = 3;
+  uint64 CNP = 4;
+  string username = 5;
+  string password = 6;
+}
+
+message  Show{
+  uint64 id = 1;
+  string showName = 2;
+  string description = 3;
+  Artist artist = 4;
+  string dateTime = 5;
+  string showLocation = 6;
+  uint32 seatsTotal = 7;
+  uint32 seatsSold = 8;
+
+}
+
+message Ticket {
+  uint64 id = 1;
+  uint64 showId = 2;
+  uint64 employeeId = 3;
+  string buyerName = 4;
+}
+
+message FestivalRequest {
+  enum Type {Unkown = 0; Login = 1; Logout = 2; FindShowById = 3; FindEmployeeByUsername = 4 ; GetShows = 5; GetArtistsByDate = 6; BuyTicket = 7; UpdateShow = 8;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+  oneof payload{
+    OfficeEmployee officeEmployee = 2;
+    LongM id = 3;
+    StringM data = 4;
+    Show show =5;
+    Ticket ticket=6;
+    Artist artist=7;
+  }
+}
+
+message FestivalResponse{
+  enum Type {Unknown = 0; Ok = 1; Error = 2; Shows = 3; FindEmployeeByUsername = 4; FindShowById = 5; GetArtistsByDate = 6; ShowUpdated = 7;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+  string error = 2;
+  repeated Show shows = 3;
+  OfficeEmployee officeEmployee = 4 ;
+  Show show = 5;
+}

@@ -43,8 +43,7 @@ public class ServiceImpl implements IFestivalService {
     }
 
 
-    public synchronized void buyTicket(Long showId, Long officeEmployeeId, String buyerName) {
-        Ticket ticket = new Ticket(showId, officeEmployeeId, buyerName);
+    public synchronized void buyTicket(Ticket ticket) {
         ticketRepository.save(ticket);
     }
 

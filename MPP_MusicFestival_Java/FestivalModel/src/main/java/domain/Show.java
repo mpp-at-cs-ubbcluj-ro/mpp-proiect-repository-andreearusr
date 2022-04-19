@@ -35,6 +35,10 @@ public class Show extends Entity<Long> implements Serializable {
         this.seatsSold = seatsSold;
     }
 
+    public void setId(Long id) {
+        super.setId(id);
+    }
+
     public String getShowName() {
         return showName;
     }

@@ -29,6 +29,11 @@ public class OfficeEmployee extends Entity<Long> implements Serializable {
         this.password = password;
     }
 
+    public void setId(Long id){
+        super.setId(id);
+    }
+
+
     public String getFirstName() {
         return firstName;
     }

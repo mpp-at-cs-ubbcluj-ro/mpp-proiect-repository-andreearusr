@@ -23,6 +23,10 @@ public class Ticket extends Entity<Long> implements Serializable {
     }
 
 
+    public void setId(Long id){
+        super.setId(id);
+    }
+
     public Long getShowId() {
         return showId;
     }

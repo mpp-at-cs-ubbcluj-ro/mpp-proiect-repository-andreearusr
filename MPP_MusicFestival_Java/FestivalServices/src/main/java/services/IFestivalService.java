@@ -2,6 +2,7 @@ package services;
 
 import domain.OfficeEmployee;
 import domain.Show;
+import domain.Ticket;
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -12,7 +13,7 @@ public interface IFestivalService {
 
     List<Show> getArtistsByDate(Timestamp date) throws LogException;
 
-    void buyTicket(Long showId, Long officeEmployeeId, String buyerName) throws LogException;
+    void buyTicket(Ticket ticket) throws LogException;
 
     void updateShow(Long showId, Show newShow) throws LogException;
 

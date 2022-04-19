@@ -1,7 +1,7 @@
 
-import network.utils.AbstractServer;
-import network.utils.FestivalRpcConcurrentServer;
-import network.utils.ServerException;
+import festival.network.utils.AbstractServer;
+import festival.network.utils.FestivalRpcConcurrentServer;
+import festival.network.utils.ServerException;
 import repository.ArtistRepository;
 import repository.OfficeEmployeeRepository;
 import repository.ShowRepository;

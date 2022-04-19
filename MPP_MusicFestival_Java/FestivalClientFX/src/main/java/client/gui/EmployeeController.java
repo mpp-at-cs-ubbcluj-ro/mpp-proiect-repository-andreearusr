@@ -192,9 +192,10 @@ public class EmployeeController implements Initializable, IFestivalObserver {
             if (newShow.getSeatsTotal() - newShow.getSeatsSold() != 0) {
                 newShow.setSeatsSold(newShow.getSeatsSold() + nrTickets);
 
-
+                Ticket ticket = new Ticket(showId, officeEmployeeId, buyerN);
                 for (int i = 0; i < nrTickets; i++)
-                    server.buyTicket(showId, officeEmployeeId, buyerN);
+                    server.buyTicket(ticket);
+
                 server.updateShow(showId, newShow);
                 clear();
             } else
@@ -214,9 +215,8 @@ public class EmployeeController implements Initializable, IFestivalObserver {
     }
 
     @Override
-    public void showUpdated(Show show) {
+    public void showUpdated(Show show) throws LogException {
         System.out.println("Show updated Employee Controller");
-
 
         Platform.runLater(() -> {
             int i = 0;
@@ -227,6 +227,7 @@ public class EmployeeController implements Initializable, IFestivalObserver {
                 }
                 i++;
             }
+            customRow(ShowAvailableSeatsColumn);
 
             int j = 0;
             for (Show ss : model2) {
@@ -236,8 +237,11 @@ public class EmployeeController implements Initializable, IFestivalObserver {
                 }
                 j++;
             }
+            customRow(SeatsAvailableColumn);
 
         });
+
+
     }
 
 

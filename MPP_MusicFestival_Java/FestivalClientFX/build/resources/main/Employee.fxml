@@ -12,9 +12,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane opacity="0.87" prefHeight="642.0" prefWidth="737.0" style="-fx-background-color: #99CC99;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.EmployeeController">
+<AnchorPane prefHeight="642.0" prefWidth="737.0" style="-fx-background-color: #99CC99;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.EmployeeController">
    <children>
-      <TableView fx:id="showsTable" blendMode="LIGHTEN" layoutX="74.0" layoutY="41.0" prefHeight="203.0" prefWidth="589.0">
+      <TableView fx:id="showsTable" blendMode="MULTIPLY" layoutX="74.0" layoutY="41.0" prefHeight="203.0" prefWidth="589.0">
         <columns>
           <TableColumn fx:id="ShowNameColumn" prefWidth="95.19997787475586" text="Nume spectacol" />
           <TableColumn fx:id="ShowArtistColumn" prefWidth="81.5999755859375" text="Nume artist" />
@@ -47,7 +47,7 @@
             <TableColumn fx:id="SeatsAvailableColumn" prefWidth="108.79998779296875" text="Bilete disponibile" />
          </columns>
       </TableView>
-      <Button blendMode="MULTIPLY" layoutX="84.0" layoutY="541.0" mnemonicParsing="false" onAction="#handleSearch" prefHeight="18.0" prefWidth="62.0" text="Cauta">
+      <Button blendMode="MULTIPLY" layoutX="28.0" layoutY="542.0" mnemonicParsing="false" onAction="#handleSearch" prefHeight="18.0" prefWidth="62.0" text="Cauta">
          <font>
             <Font name="Arial" size="12.0" />
          </font>

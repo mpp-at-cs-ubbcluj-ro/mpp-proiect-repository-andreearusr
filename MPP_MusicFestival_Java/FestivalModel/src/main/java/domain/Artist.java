@@ -25,6 +25,10 @@ public class Artist extends Entity<Long> implements Serializable {
     }
 
 
+    public void setId(Long id) {
+        super.setId(id);
+    }
+
     public String getFirstName() {
         return firstName;
     }
