@@ -1,4 +1,4 @@
-﻿using log4net.Core;
+﻿
 using MusicFestival.model;
 using MusicFestival.networking;
 using MusicFestival.services;
@@ -192,11 +192,12 @@ namespace MusicFestival.networking
 				long officeEmployeeId = getReq.OfficeEmployeeId;
 				string buyerName = getReq.BuyerName;
 
+				Ticket ticket = new Ticket(showId, officeEmployeeId, buyerName);
 				try
 				{
 					lock (server)
 					{
-						server.buyTicket(showId, officeEmployeeId, buyerName);
+						server.buyTicket(ticket);
 					}
 
 					return new OkResponse();

@@ -3,6 +3,7 @@ using MusicFestival.model;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -56,7 +57,7 @@ namespace MusicFestival.persistence
                         long id = dataR.GetInt32(0);
                         string show_name = dataR.GetString(1);
                         string description = dataR.GetString(2);
-                        DateTime date_time = DateTime.Parse(dataR.GetString(3));
+                        DateTime date_time = Convert.ToDateTime(dataR.GetString(3));
                         string show_location = dataR.GetString(4);
                         int seats_available = dataR.GetInt32(5);
                         int seats_sold = dataR.GetInt32(6);
@@ -92,7 +93,7 @@ namespace MusicFestival.persistence
                         long id = dataR.GetInt32(0);
                         string show_name = dataR.GetString(1);
                         string description = dataR.GetString(2);
-                        DateTime date_time = DateTime.Parse(dataR.GetString(3));
+                        DateTime date_time = Convert.ToDateTime(dataR.GetString(3));
                         string show_location = dataR.GetString(4);
                         int seats_available = dataR.GetInt32(5);
                         int seats_sold = dataR.GetInt32(6);
@@ -124,11 +125,11 @@ namespace MusicFestival.persistence
                 using (var dataR = comm.ExecuteReader())
                 {
                     if (dataR.Read())
-                    {
+                    { 
                         long idS = dataR.GetInt32(0);
                         string show_name = dataR.GetString(1);
                         string description = dataR.GetString(2);
-                        DateTime date_time = DateTime.Parse(dataR.GetString(3));
+                        DateTime date_time = Convert.ToDateTime(dataR.GetString(3));
                         string show_location = dataR.GetString(4);
                         int seats_available = dataR.GetInt32(5);
                         int seats_sold = dataR.GetInt32(6);

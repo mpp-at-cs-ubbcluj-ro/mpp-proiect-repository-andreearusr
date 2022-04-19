@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "networking", "networking\ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client", "client\client.csproj", "{30D60DD1-6B35-4A8F-B98D-7CAF7F830946}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "protobuf3", "protobuf3\protobuf3.csproj", "{D06C13CA-297F-45DF-AF2B-353E7C15D518}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,18 @@ Global
 		{30D60DD1-6B35-4A8F-B98D-7CAF7F830946}.Release|x64.Build.0 = Release|Any CPU
 		{30D60DD1-6B35-4A8F-B98D-7CAF7F830946}.Release|x86.ActiveCfg = Release|Any CPU
 		{30D60DD1-6B35-4A8F-B98D-7CAF7F830946}.Release|x86.Build.0 = Release|Any CPU
+		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Debug|x64.Build.0 = Debug|Any CPU
+		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Debug|x86.Build.0 = Debug|Any CPU
+		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Release|x64.ActiveCfg = Release|Any CPU
+		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Release|x64.Build.0 = Release|Any CPU
+		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Release|x86.ActiveCfg = Release|Any CPU
+		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

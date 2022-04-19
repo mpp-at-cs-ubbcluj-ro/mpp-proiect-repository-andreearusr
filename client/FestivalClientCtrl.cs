@@ -62,9 +62,10 @@ namespace MusicFestival.client
             return show;
         }
 
-        public void buyTicket(long showId, string buyerName)
+        public void buyTicket(ulong showId, string buyerName)
         {
-            server.buyTicket(showId, currentEmployee.Id, buyerName);
+            Ticket ticket = new Ticket(showId, currentEmployee.Id, buyerName);
+            server.buyTicket(ticket);
         }
 
         public void updateShow(long showId, Show newShow)

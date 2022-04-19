@@ -57,9 +57,6 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -118,6 +115,10 @@
     <ProjectReference Include="..\persistence\persistence.csproj">
       <Project>{7646eaf8-29c8-47a9-9a78-a2304ad2928e}</Project>
       <Name>persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\protobuf3\protobuf3.csproj">
+      <Project>{d06c13ca-297f-45df-af2b-353e7c15d518}</Project>
+      <Name>protobuf3</Name>
     </ProjectReference>
     <ProjectReference Include="..\services\services.csproj">
       <Project>{23874123-6e30-45a1-815b-cef6a81b6c74}</Project>

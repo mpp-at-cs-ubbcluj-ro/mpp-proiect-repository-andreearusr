@@ -1,4 +1,4 @@
-﻿using log4net.Core;
+﻿
 using MusicFestival.model;
 using MusicFestival.persistence;
 using MusicFestival.services;
@@ -40,9 +40,8 @@ namespace MusicFestival.Server
             return showRepository.getArtistsByDate(date);
         }
 
-        public void buyTicket(long showId, long officeEmployeeId, String buyerName)
+        public void buyTicket(Ticket ticket)
         {
-            Ticket ticket = new Ticket(showId, officeEmployeeId, buyerName);
             ticketRepository.save(ticket);
         }
 

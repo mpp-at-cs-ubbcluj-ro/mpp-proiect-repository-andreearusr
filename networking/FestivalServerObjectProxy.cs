@@ -1,5 +1,4 @@
-﻿using log4net.Core;
-using MusicFestival.model;
+﻿using MusicFestival.model;
 using MusicFestival.networking;
 using MusicFestival.services;
 using System;
@@ -130,9 +129,9 @@ namespace MusicFestival.networking
 			}
 		}
 
-		public void buyTicket(long showId, long officeEmployeeId, string buyerName)
+		public void buyTicket(Ticket ticket)
         {
-			sendRequest(new BuyTicketRequest(showId, officeEmployeeId, buyerName));
+			sendRequest(new BuyTicketRequest(ticket.showId, ticket.employeeId, ticket.buyerName));
 			Response response = readResponse();
 			if (response is ErrorResponse)
 			{

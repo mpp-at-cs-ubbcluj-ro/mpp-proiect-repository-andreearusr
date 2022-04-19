@@ -12,7 +12,7 @@ namespace MusicFestival.client
     {
         private FestivalClientCtrl ctrl;
 
-        long showId = 0;
+        ulong showId = 0;
         DateTime data;
 
         public EmployeeWindow(FestivalClientCtrl ctrl)
@@ -202,7 +202,7 @@ namespace MusicFestival.client
                 else
                 {
                     string buyerName = textBoxBuyerName.Text;
-                    int nrTickets = Convert.ToInt32(comboBoxBilets.SelectedItem);
+                    uint nrTickets = Convert.ToUInt32(comboBoxBilets.SelectedItem);
 
                     if (buyerName.Equals(""))
                     {

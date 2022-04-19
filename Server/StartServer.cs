@@ -1,8 +1,7 @@
-﻿
-using MusicFestival.model;
-using MusicFestival.networking;
+﻿using MusicFestival.networking;
 using MusicFestival.persistence;
 using MusicFestival.services;
+using protobuf3;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -42,14 +41,14 @@ namespace MusicFestival.Server
             TicketRepository ticketDBRepository = new TicketDBRepository(props, showDBRepository, officeEmployeeDBRepository);
             IFestivalService festivalServiceImpl = new ServiceImpl(artistDBRepository, officeEmployeeDBRepository, showDBRepository, ticketDBRepository);
 
-           /* List<Show> artists = festivalServiceImpl.getShows();
-            foreach (Show a in artists)
-            {
-                Console.WriteLine(a);
-            }*/
+            /* List<Show> artists = festivalServiceImpl.getShows();
+             foreach (Show a in artists)
+             {
+                 Console.WriteLine(a);
+             }*/
 
-            SerialFestivalServer server = new SerialFestivalServer("127.0.0.1", 55556, festivalServiceImpl);
-            server.Start();
+            ProtoV3FestivalServer scs = new ProtoV3FestivalServer("127.0.0.1", 55556, festivalServiceImpl);
+            scs.Start();
             Console.WriteLine("Server started ...");
             //Console.WriteLine("Press <enter> to exit...");
             
@@ -74,4 +73,21 @@ namespace MusicFestival.Server
         }
     }
 
+}
+
+public class ProtoV3FestivalServer : ConcurrentServer
+{
+    private IFestivalService server;
+    private ProtoFestivalWorker worker;
+    public ProtoV3FestivalServer(string host, int port, IFestivalService server)
+        : base(host, port)
+    {
+        this.server = server;
+        Console.WriteLine("ProtoFestivalServer...");
+    }
+    protected override Thread createWorker(TcpClient client)
+    {
+        worker = new ProtoFestivalWorker(server, client);
+        return new Thread(new ThreadStart(worker.run));
+    }
 }

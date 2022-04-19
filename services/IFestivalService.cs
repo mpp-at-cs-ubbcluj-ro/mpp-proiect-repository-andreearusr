@@ -13,7 +13,7 @@ namespace MusicFestival.services
 
         List<Show> getArtistsByDate(DateTime date);
 
-        void buyTicket(long showId, long officeEmployeeId, string buyerName);
+        void buyTicket(Ticket ticket);
 
         void updateShow(long showId, Show newShow);
 
