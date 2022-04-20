@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="festival.db" uuid="887b693a-3c82-41d2-8b16-fdd371172dd7">
+    <data-source source="LOCAL" name="festival.db [3]" uuid="8be5a315-406f-4915-90b1-482825f99b91">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/festival.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/FestivalServer/festival.db</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="festivalHibernate.db" uuid="534a06f5-9fb1-446a-8c10-c94aa135ab9f">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/FestivalServer/festivalHibernate.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

@@ -13,8 +13,9 @@ public class Show extends Entity<Long> implements Serializable {
     private int seatsTotal;
     private int seatsSold;
 
+
     public Show(Long id, String showName, String description, Artist artist, Timestamp dateTime, String showLocation, int seatsTotal, int seatsSold) {
-        super(id);
+        setId(id);
         this.showName = showName;
         this.description = description;
         this.artist = artist;
@@ -25,7 +26,7 @@ public class Show extends Entity<Long> implements Serializable {
     }
 
     public Show(String showName, String description, Artist artist, Timestamp dateTime, String showLocation, int seatsTotal, int seatsSold) {
-        super(0L);
+        setId(0L);
         this.showName = showName;
         this.description = description;
         this.artist = artist;
@@ -33,6 +34,11 @@ public class Show extends Entity<Long> implements Serializable {
         this.showLocation = showLocation;
         this.seatsTotal = seatsTotal;
         this.seatsSold = seatsSold;
+    }
+
+
+    public Long getId(){
+        return  super.getId();
     }
 
     public void setId(Long id) {
@@ -97,8 +103,14 @@ public class Show extends Entity<Long> implements Serializable {
 
     @Override
     public String toString() {
-        return "Spectacol- Nume:" + showName + " Descriere:" + description +
-                "\nnume Artist:" + artist.getFirstName() + "\nData si ora:" + dateTime.toString() +
-                " Locatia:" + showLocation;
+        return "Show{" +
+                "showName='" + showName + '\'' +
+                ", description='" + description + '\'' +
+                ", artist=" + getArtist() +
+                ", dateTime=" + dateTime +
+                ", showLocation='" + showLocation + '\'' +
+                ", seatsTotal=" + seatsTotal +
+                ", seatsSold=" + seatsSold +
+                '}';
     }
 }

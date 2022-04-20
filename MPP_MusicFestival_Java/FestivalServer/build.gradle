@@ -11,21 +11,20 @@ repositories {
 }
 
 dependencies {
-    implementation project (':FestivalModel')
-    implementation project (':FestivalServices')
-    implementation project (':FestivalPersistence')
-    implementation project (':FestivalNetworking')
+    implementation project(':FestivalModel')
+    implementation project(':FestivalServices')
+    implementation project(':FestivalPersistence')
+    implementation project(':FestivalNetworking')
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-}
 
-application{
-    mainClass='StartRpcServer'
-}
-
+    application {
+        mainClass = 'StartRpcServer'
+    }
 
 
-test {
-    useJUnitPlatform()
+    test {
+        useJUnitPlatform()
+    }
 }

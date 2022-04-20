@@ -12,7 +12,7 @@ public class OfficeEmployee extends Entity<Long> implements Serializable {
 
 
     public OfficeEmployee(Long id, String firstName, String lastName, Long CNP, String username, String password) {
-        super(id);
+        setId(id);
         this.firstName = firstName;
         this.lastName = lastName;
         this.CNP = CNP;
@@ -21,7 +21,7 @@ public class OfficeEmployee extends Entity<Long> implements Serializable {
     }
 
     public OfficeEmployee(String firstName, String lastName, Long CNP, String username, String password) {
-        super(0L);
+        setId(0L);
         this.firstName = firstName;
         this.lastName = lastName;
         this.CNP = CNP;
@@ -29,7 +29,11 @@ public class OfficeEmployee extends Entity<Long> implements Serializable {
         this.password = password;
     }
 
-    public void setId(Long id){
+    public Long getId(){
+        return  super.getId();
+    }
+
+    public void setId(Long id) {
         super.setId(id);
     }
 

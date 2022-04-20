@@ -27,7 +27,7 @@ dependencies {
 }
 
 application{
-    mainClass='client.StartProtobuffClient'
+    mainClass='client.StartRpcClientFX'
 }
 
 test {

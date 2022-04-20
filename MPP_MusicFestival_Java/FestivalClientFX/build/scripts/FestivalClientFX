@@ -201,7 +201,7 @@ fi
 
 set -- \
         -classpath "$CLASSPATH" \
-        client.StartProtobuffClient \
+        client.StartRpcClientFX \
         "$@"
 
 # Use "xargs" to parse quoted args.

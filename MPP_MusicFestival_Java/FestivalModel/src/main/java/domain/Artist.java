@@ -2,14 +2,21 @@ package domain;
 
 import java.io.Serializable;
 
+
 public class Artist extends Entity<Long> implements Serializable {
+    private Long id;
     private String firstName;
     private String lastName;
     private int age;
     private String originCountry;
 
+
+    public Artist() {
+
+    }
+
     public Artist(Long id, String firstName, String lastName, int age, String originCountry) {
-        super(id);
+        setId(id);
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -17,13 +24,17 @@ public class Artist extends Entity<Long> implements Serializable {
     }
 
     public Artist(String firstName, String lastName, int age, String originCountry) {
-        super(0L);
+        setId(0L);
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.originCountry = originCountry;
     }
 
+
+    public Long getId() {
+        return super.getId();
+    }
 
     public void setId(Long id) {
         super.setId(id);
@@ -61,11 +72,13 @@ public class Artist extends Entity<Long> implements Serializable {
         this.originCountry = originCountry;
     }
 
+
     @Override
     public String toString() {
-        return "Artist- Nume:" + lastName + " Prenume:" + firstName +
-                " Varsta:" + age + " Tara origine:" + originCountry;
-
+        return "Artist{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
     }
 }
 

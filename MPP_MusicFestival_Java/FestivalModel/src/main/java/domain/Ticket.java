@@ -9,21 +9,25 @@ public class Ticket extends Entity<Long> implements Serializable {
     public String buyerName;
 
     public Ticket(Long id, Long showId, Long employeeId, String buyerName) {
-        super(id);
+        setId(id);
         this.showId = showId;
         this.employeeId = employeeId;
         this.buyerName = buyerName;
     }
 
     public Ticket(Long showId, Long employeeId, String buyerName) {
-        super(0L);
+        setId(0L);
         this.showId = showId;
         this.employeeId = employeeId;
         this.buyerName = buyerName;
     }
 
 
-    public void setId(Long id){
+    public Long getId(){
+        return  super.getId();
+    }
+
+    public void setId(Long id) {
         super.setId(id);
     }
 

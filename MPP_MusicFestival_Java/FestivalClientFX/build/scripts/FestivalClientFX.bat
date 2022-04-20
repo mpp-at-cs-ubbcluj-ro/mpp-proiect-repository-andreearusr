@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\FestivalClientFX-1.0.jar;%APP_HOME%\lib\javafx-fxml
 
 
 @rem Execute FestivalClientFX
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %FESTIVAL_CLIENT_FX_OPTS%  -classpath "%CLASSPATH%" client.StartProtobuffClient %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %FESTIVAL_CLIENT_FX_OPTS%  -classpath "%CLASSPATH%" client.StartRpcClientFX %*
 
 :end
 @rem End local scope for the variables with windows NT shell

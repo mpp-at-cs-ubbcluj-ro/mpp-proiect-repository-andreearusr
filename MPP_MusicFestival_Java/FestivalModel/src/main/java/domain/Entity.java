@@ -4,10 +4,9 @@ import java.io.Serializable;
 
 public class Entity<T> implements Serializable {
 
-    private T Id;
+    public T Id;
 
-    public Entity(T id) {
-        Id = id;
+    public Entity() {
     }
 
     public T getId() {
