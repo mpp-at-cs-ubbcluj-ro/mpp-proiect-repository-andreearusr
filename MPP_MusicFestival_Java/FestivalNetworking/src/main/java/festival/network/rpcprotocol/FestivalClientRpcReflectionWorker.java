@@ -15,6 +15,7 @@ import java.lang.reflect.Method;
 import java.net.Socket;
 import java.sql.Timestamp;
 import java.util.List;
+import java.util.Objects;
 
 
 public class FestivalClientRpcReflectionWorker implements Runnable, IFestivalObserver {
@@ -178,11 +179,7 @@ public class FestivalClientRpcReflectionWorker implements Runnable, IFestivalObs
 
     private Response handleBUY_TICKET(Request request) {
         System.out.println("BuyTicket Request ...");
-        List<Object> list = (List<Object>) request.data();
-        Long showId = (Long) list.get(0);
-        Long officeEmployeeId = (Long) list.get(1);
-        String buyerName = (String) list.get(2);
-        Ticket ticket = new Ticket(showId, officeEmployeeId, buyerName);
+        Ticket ticket = (Ticket) request.data();
 
         try {
             server.buyTicket(ticket);
