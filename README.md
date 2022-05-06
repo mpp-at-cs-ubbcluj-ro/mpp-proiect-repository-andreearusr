@@ -12,3 +12,4 @@ branch Lab7Java - Networking + Actualizare date in Java
 branch Lab8CSharp - Networking + Actualizare date in C#
 branch Lab9Java - Protobuf Java
 branch Lab9CSharp - Protobuf CSharp
+branch Lab10Java - ORM pentru entitatea Artist
