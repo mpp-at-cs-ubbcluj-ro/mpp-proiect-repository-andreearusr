@@ -1,7 +1,7 @@
 package festival.network.utils;
 
 import festival.network.rpcprotocol.FestivalClientRpcReflectionWorker;
-import services.IFestivalService;
+import festival.services.IFestivalService;
 
 import java.net.Socket;
 

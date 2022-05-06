@@ -5,4 +5,5 @@ include 'FestivalServices'
 include 'FestivalServer'
 include 'FestivalClientFX'
 include 'FestivalNetworking'
+include 'RestServices'
 

@@ -7,7 +7,7 @@
 <hibernate-configuration>
     <session-factory>
 
-        <property name="dialect">repository.org.hibernate.dialect.SQLiteDialect</property>
+        <property name="dialect">festival.repository.org.hibernate.dialect.SQLiteDialect</property>
         <property name="connection.driver_class">org.sqlite.JDBC</property>
         <property name="hibernate.connection.url">jdbc:sqlite:festivalHibernate.db</property>
 
@@ -18,7 +18,7 @@
         <property name="format_sql">true</property>
 
 
-        <mapping resource="domain/Artist.hbm.xml"/>
+        <mapping resource="festival/domain/Artist.hbm.xml"/>
 
     </session-factory>
 </hibernate-configuration>

@@ -1,23 +1,20 @@
 
-import domain.Artist;
-import domain.Ticket;
 import festival.network.utils.AbstractServer;
 import festival.network.utils.FestivalRpcConcurrentServer;
 import festival.network.utils.ServerException;
-import repository.ArtistRepository;
-import repository.OfficeEmployeeRepository;
-import repository.ShowRepository;
-import repository.TicketRepository;
-import repository.database.ArtistDBRepository;
-import repository.database.OfficeEmployeeDBRepository;
-import repository.database.ShowDBRepository;
-import repository.database.TicketDBRepository;
-import repository.orm.ArtistORMRepository;
-import server.ServiceImpl;
-import services.IFestivalService;
+import festival.repository.ArtistRepository;
+import festival.repository.OfficeEmployeeRepository;
+import festival.repository.ShowRepository;
+import festival.repository.TicketRepository;
+import festival.repository.database.ArtistDBRepository;
+import festival.repository.database.OfficeEmployeeDBRepository;
+import festival.repository.database.ShowDBRepository;
+import festival.repository.database.TicketDBRepository;
+import festival.repository.orm.ArtistORMRepository;
+import festival.server.ServiceImpl;
+import festival.services.IFestivalService;
 
 import java.io.IOException;
-import java.util.List;
 import java.util.Properties;
 
 public class StartRpcServer {
@@ -35,11 +32,9 @@ public class StartRpcServer {
             return;
         }
 
-        //ArtistRepository artistRepository = new ArtistDBRepository(serverProps);
-        ArtistRepository artistRepository = new ArtistORMRepository();
+        ArtistRepository artistRepository = new ArtistDBRepository();
+       //ArtistRepository artistRepository = new ArtistORMRepository();
         OfficeEmployeeRepository officeEmployeeRepository = new OfficeEmployeeDBRepository(serverProps);
-        //OfficeEmployeeRepository officeEmployeeRepository = new OfficeEmployeeORMRepository();
-
         ShowRepository showRepository = new ShowDBRepository(serverProps, artistRepository);
         TicketRepository ticketRepository = new TicketDBRepository(serverProps,showRepository, officeEmployeeRepository);
 

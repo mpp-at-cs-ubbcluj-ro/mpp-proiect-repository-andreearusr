@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane cache="true" opacity="0.57" prefHeight="356.0" prefWidth="334.0" style="-fx-background-color: #99CC99;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.LoginController">
+<AnchorPane cache="true" opacity="0.57" prefHeight="356.0" prefWidth="334.0" style="-fx-background-color: #99CC99;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="festival.client.gui.LoginController">
    <children>
       <TextField fx:id="inputUsername" layoutX="92.0" layoutY="181.0" promptText="Username" />
       <PasswordField fx:id="inputPassword" layoutX="92.0" layoutY="239.0" promptText="Password" />

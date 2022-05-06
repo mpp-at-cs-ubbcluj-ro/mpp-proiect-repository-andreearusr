@@ -1,11 +1,11 @@
 package festival.network.rpcprotocol;
 
-import domain.OfficeEmployee;
-import domain.Show;
-import domain.Ticket;
-import services.IFestivalObserver;
-import services.IFestivalService;
-import services.LogException;
+import festival.domain.OfficeEmployee;
+import festival.domain.Show;
+import festival.domain.Ticket;
+import festival.services.IFestivalObserver;
+import festival.services.IFestivalService;
+import festival.services.LogException;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -15,7 +15,6 @@ import java.lang.reflect.Method;
 import java.net.Socket;
 import java.sql.Timestamp;
 import java.util.List;
-import java.util.Objects;
 
 
 public class FestivalClientRpcReflectionWorker implements Runnable, IFestivalObserver {

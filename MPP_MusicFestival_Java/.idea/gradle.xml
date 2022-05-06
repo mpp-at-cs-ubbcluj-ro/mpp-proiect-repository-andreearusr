@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/FestivalPersistence" />
             <option value="$PROJECT_DIR$/FestivalServer" />
             <option value="$PROJECT_DIR$/FestivalServices" />
+            <option value="$PROJECT_DIR$/RestServices" />
           </set>
         </option>
       </GradleProjectSettings>

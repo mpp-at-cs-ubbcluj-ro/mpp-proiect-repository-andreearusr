@@ -1,11 +1,10 @@
 package festival.network.protobuffprotocol;
 
-import domain.OfficeEmployee;
-import domain.Ticket;
-import domain.Show;
-import domain.Artist;
+import festival.domain.OfficeEmployee;
+import festival.domain.Ticket;
+import festival.domain.Show;
+import festival.domain.Artist;
 
-import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;

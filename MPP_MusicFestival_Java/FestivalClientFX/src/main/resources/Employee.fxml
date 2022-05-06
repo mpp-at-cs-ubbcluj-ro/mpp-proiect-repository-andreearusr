@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="642.0" prefWidth="737.0" style="-fx-background-color: #99CC99;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.gui.EmployeeController">
+<AnchorPane prefHeight="642.0" prefWidth="737.0" style="-fx-background-color: #99CC99;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="festival.client.gui.EmployeeController">
    <children>
       <TableView fx:id="showsTable" blendMode="MULTIPLY" layoutX="74.0" layoutY="41.0" prefHeight="203.0" prefWidth="589.0">
         <columns>

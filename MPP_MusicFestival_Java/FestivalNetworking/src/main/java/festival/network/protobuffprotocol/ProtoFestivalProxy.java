@@ -1,20 +1,15 @@
 package festival.network.protobuffprotocol;
 
-import domain.OfficeEmployee;
-import domain.Show;
-import domain.Ticket;
-import festival.network.rpcprotocol.Request;
-import festival.network.rpcprotocol.RequestType;
-import festival.network.rpcprotocol.Response;
-import festival.network.rpcprotocol.ResponseType;
-import services.IFestivalObserver;
-import services.IFestivalService;
-import services.LogException;
+import festival.domain.OfficeEmployee;
+import festival.domain.Show;
+import festival.domain.Ticket;
+import festival.services.IFestivalObserver;
+import festival.services.IFestivalService;
+import festival.services.LogException;
 
 import java.io.*;
 import java.net.Socket;
 import java.sql.Timestamp;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
