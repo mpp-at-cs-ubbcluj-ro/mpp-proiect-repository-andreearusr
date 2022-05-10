@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client", "client\client.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "protobuf3", "protobuf3\protobuf3.csproj", "{D06C13CA-297F-45DF-AF2B-353E7C15D518}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpRestClient", "CSharpRestClient\CSharpRestClient.csproj", "{18936456-9970-45DC-8A37-E705D4A752D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,18 @@ Global
 		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Release|x64.Build.0 = Release|Any CPU
 		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Release|x86.ActiveCfg = Release|Any CPU
 		{D06C13CA-297F-45DF-AF2B-353E7C15D518}.Release|x86.Build.0 = Release|Any CPU
+		{18936456-9970-45DC-8A37-E705D4A752D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18936456-9970-45DC-8A37-E705D4A752D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18936456-9970-45DC-8A37-E705D4A752D7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{18936456-9970-45DC-8A37-E705D4A752D7}.Debug|x64.Build.0 = Debug|Any CPU
+		{18936456-9970-45DC-8A37-E705D4A752D7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{18936456-9970-45DC-8A37-E705D4A752D7}.Debug|x86.Build.0 = Debug|Any CPU
+		{18936456-9970-45DC-8A37-E705D4A752D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18936456-9970-45DC-8A37-E705D4A752D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18936456-9970-45DC-8A37-E705D4A752D7}.Release|x64.ActiveCfg = Release|Any CPU
+		{18936456-9970-45DC-8A37-E705D4A752D7}.Release|x64.Build.0 = Release|Any CPU
+		{18936456-9970-45DC-8A37-E705D4A752D7}.Release|x86.ActiveCfg = Release|Any CPU
+		{18936456-9970-45DC-8A37-E705D4A752D7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
