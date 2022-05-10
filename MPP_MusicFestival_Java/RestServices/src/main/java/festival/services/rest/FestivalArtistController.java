@@ -42,9 +42,8 @@ public class FestivalArtistController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public Artist create(@RequestBody Artist user){
-        artistRepository.save(user);
-        return user;
+    public void create(@RequestBody Artist artist){
+        artistRepository.save(artist);
     }
 ;
     @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
