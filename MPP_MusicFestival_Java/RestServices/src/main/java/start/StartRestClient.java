@@ -12,11 +12,11 @@ public class StartRestClient {
 
     public static void main(String[] args) {
         RestTemplate restTemplate = new RestTemplate();
-            Artist artistT = new Artist(34L,"Mihaela", "Dorobant", 22, "Romania");
+        Artist artistT = new Artist(35L, "Mihai", "Cristea", 25, "Romania");
         try {
 
-            show(()->artistsClient.create(artistT));
-            show(() -> System.out.println(artistsClient.getById(1L)));
+            show(() -> artistsClient.create(artistT));
+            show(() -> System.out.println(artistsClient.getById(35L)));
 
             show(() -> {
                 Artist[] res = artistsClient.getAll();
@@ -26,17 +26,23 @@ public class StartRestClient {
 
             });
 
-           /* Artist art = artistsClient.getById(9L);
+            Artist art = artistsClient.getById(35L);
             art.setAge(47);
-            show(() -> artistsClient.update(art));*/
+            show(() -> artistsClient.update(art));
 
-            //show(()->artistsClient.delete(9L));
+
             show(() -> {
                 Artist[] res = artistsClient.getAll();
                 for (Artist a : res) {
-                    System.out.println(a.getId() + ": " + a.getFirstName() + " " + a.getLastName()+""+a.getAge());
+                    System.out.println(a.getId() + ": " + a.getFirstName() + " " + a.getLastName() + "" + a.getAge());
                 }
-
+            });
+            show(() -> artistsClient.delete(35L));
+            show(() -> {
+                Artist[] res = artistsClient.getAll();
+                for (Artist a : res) {
+                    System.out.println(a.getId() + ": " + a.getFirstName() + " " + a.getLastName() + "" + a.getAge());
+                }
             });
 
 
