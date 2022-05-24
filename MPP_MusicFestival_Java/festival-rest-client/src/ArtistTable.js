@@ -15,6 +15,8 @@ class ArtistRow extends React.Component{
                 <td>{this.props.artist.id}</td>
                 <td>{this.props.artist.firstName}</td>
                 <td>{this.props.artist.lastName}</td>
+                <td>{this.props.artist.age}</td>
+                <td>{this.props.artist.originCountry}</td>
                 <td><button  onClick={this.handleDelete}>Delete</button></td>
             </tr>
         );
@@ -37,6 +39,8 @@ class ArtistTable extends React.Component {
                         <th>Id</th>
                         <th>FirstName</th>
                         <th>LastName</th>
+                        <th>Age</th>
+                        <th>Origin Country</th>
 
                         <th>Actions</th>
                     </tr>
